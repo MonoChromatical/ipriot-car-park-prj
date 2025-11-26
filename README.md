@@ -95,3 +95,15 @@ Disadvantage:
 Because a dictionary is not strongly typed, it's easy to make mistakes like typing a key name wrong (`"availble_bays"` 
 instead of `"available_bays"`). These errors only show up at runtime and can be harder to find compared to using
 explicit parameters.
+
+    The car park register method should accept a Sensor (optional) or Display object. It should raise a TypeError if the 
+    object is neither a Sensor nor a Display. Before proceeding, think about where you would test this behaviour. Should
+    you test it in the CarPark unit tests or the Display/Sensor unit tests? Why?
+
+The `register` method belongs to the CarPark class, and it is part of the CarPark’s behaviour.
+
+So the test for “register raises `TypeError` when given an invalid object” should be written in the CarPark unit tests 
+(`test_car_park.py`), not in the Display or Sensor tests.
+
+This is because we are testing how CarPark reacts to bad input, not how Display or Sensor behave.
+
