@@ -20,9 +20,17 @@ Screenshot of CarPark with the new methods
 ![img_3.png](img_3.png)
 
 
-Unit test
+Unit test - test_car_park
 
 ![img_4.png](img_4.png)
+
+Unit test - test_display (Errors)
+
+![img_5.png](img_5.png)
+
+Unit test - test_display (Error correction)
+
+![img_6.png](img_6.png)
 
 ANSWERS Identify classes, methods, and attributes
 

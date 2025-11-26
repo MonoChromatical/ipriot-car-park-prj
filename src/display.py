@@ -1,6 +1,7 @@
 class Display:
-    def __init__(self, id, message="", is_on=False):
+    def __init__(self, id, car_park, message="", is_on=False):
         self.id = id
+        self.car_park = car_park
         self.message = message
         self.is_on = is_on
 
@@ -8,5 +9,8 @@ class Display:
         return f"Display {self.id}: {self.message}"
 
     def update(self, data):
+
+        if "message" in data:
+            self.message = data["message"]
         for key, value in data.items():
             print(f"{key}: {value}")
