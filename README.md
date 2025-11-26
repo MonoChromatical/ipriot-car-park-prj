@@ -9,6 +9,9 @@ First commit
 src folder after second commit
 ![img_1.png](img_1.png)
 
+Git tag evidence
+![img_2.png](img_2.png)
+
 ANSWERS 2.3 Identify classes, methods, and attributes
 
 | Class Name | Attributes                           | Methods                                                             |
