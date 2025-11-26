@@ -32,6 +32,10 @@ Unit test - test_display (Error correction)
 
 ![img_6.png](img_6.png)
 
+Added methods to the car park class
+
+
+
 ANSWERS Identify classes, methods, and attributes
 
 
