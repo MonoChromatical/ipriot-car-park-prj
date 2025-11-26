@@ -34,7 +34,11 @@ Unit test - test_display (Error correction)
 
 Added methods to the car park class
 
+![img_7.png](img_7.png)
 
+Main.py output
+
+![img_8.png](img_8.png)
 
 ANSWERS Identify classes, methods, and attributes
 

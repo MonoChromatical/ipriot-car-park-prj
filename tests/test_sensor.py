@@ -1,7 +1,7 @@
 import unittest
 
 from car_park import CarPark
-from sensor import EntrySensor, ExistSensor
+from sensor import EntrySensor, ExitSensor
 
 
 class TestSensor(unittest.TestCase):
@@ -21,7 +21,7 @@ class TestSensor(unittest.TestCase):
     def test_exit_sensor_detect_vehicle_removes_car(self):
         self.car_park.plates.append("TEST-002")
 
-        exit_sensor = ExistSensor(id=2, is_active=True, car_park=self.car_park)
+        exit_sensor = ExitSensor(id=2, is_active=True, car_park=self.car_park)
 
         exit_sensor._scan_plate = lambda: "TEST-002"
 

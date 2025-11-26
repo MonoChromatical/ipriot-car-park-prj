@@ -1,7 +1,13 @@
 from abc import ABC, abstractmethod
 import random
 
-class Sensor:
+
+def _generate_plate():
+    number = format(random.randint(0, 999), '03d')
+    return f"MOON-{number}"
+
+
+class Sensor(ABC):
     def __init__(self, id, is_active, car_park):
         self.id = id
         self.is_active = is_active
@@ -16,7 +22,7 @@ class Sensor:
         pass
 
     def _scan_plate(self):
-        return random.choice(self.car_park.plates)
+        return _generate_plate()
 
     def detect_vehicle(self):
         plate = self._scan_plate()
@@ -29,7 +35,7 @@ class EntrySensor(Sensor):
         self.car_park.add_car(plate)
         print(f"Incoming vehicle detected. Plate {plate}")
 
-class ExistSensor(Sensor):
+class ExitSensor(Sensor):
 
     def _scan_plate(self):
         return random.choice(self.car_park.plates)
