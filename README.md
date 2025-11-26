@@ -1,6 +1,15 @@
 Car Park System using Python OOP. Tracks cars, sensors, and displays.
 
 
+
+
+
+
+
+
+ANSWERS --------------------------------------------------------------------------------------------------------------
+
+
 Screenshot evidence
 
 First commit
