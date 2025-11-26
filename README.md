@@ -19,7 +19,14 @@ Screenshot of CarPark with the new methods
 
 ![img_3.png](img_3.png)
 
+
+Unit test
+
+![img_4.png](img_4.png)
+
 ANSWERS Identify classes, methods, and attributes
+
+
 
 | Class Name | Attributes                           | Methods                                                             |
 | ---------- |--------------------------------------|---------------------------------------------------------------------|
